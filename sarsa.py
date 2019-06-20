@@ -42,7 +42,3 @@ def SARSAlambda_learner(env, num_episodes, epsilon=0.1, alpha=0.5, lambdaa=0.9, 
 Q, n_steps = SARSAlambda_learner(env, 2000)
 print(n_steps)
 print(np.min(np.array(n_steps)))
-# Q = np.zeros((env.observation_space[0].n, env.observation_space[1].n, env.action_space.n))
-# policy = create_policy(Q, env.action_space.n, 0.8)
-# print(policy(env.reset()))
-# print(np.random.choice(4, p=policy(env.reset())))
